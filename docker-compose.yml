@@ -1,0 +1,13 @@
+services:
+  qa:
+    build: .
+    container_name: qa_site
+    restart: unless-stopped
+
+    expose:
+      - "80"
+    networks:
+      - web
+networks:
+  web:
+    external: true
