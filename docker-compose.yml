@@ -1,13 +1,39 @@
 services:
-  qa:
+  app:
     build: .
-    container_name: qa_site
+    container_name: php_app
     restart: unless-stopped
 
     expose:
       - "80"
+
+    depends_on:
+      - mysql
+
     networks:
       - web
+      - app_network
+
+  mysql:
+    image: mysql:8.4
+    container_name: mysql_db
+    restart: unless-stopped
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: emp_management
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+    networks:
+      - app_network
+
 networks:
   web:
     external: true
+
+  app_network:
+
+volumes:
+  mysql_data:

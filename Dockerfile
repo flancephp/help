@@ -1,5 +1,7 @@
-FROM nginx:alpine
+FROM php:8.3-apache
 
-COPY index.html /usr/share/nginx/html/index.html
+RUN docker-php-ext-install mysqli
+
+COPY app/ /var/www/html/
 
 EXPOSE 80

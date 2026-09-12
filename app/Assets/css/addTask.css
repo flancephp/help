@@ -1,0 +1,268 @@
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+}
+
+.employee-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* background: rgba(230, 228, 228, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+}
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+
+} */
+
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    /* width: 12%;
+    min-width: 100px; */
+
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 5%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 40%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 10%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 10%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 10%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 15%;
+}
+
+.submitmsg{
+    width: fit-content;
+    margin: 15px auto;
+    padding: 12px 20px;
+
+    background-color: #d4edda;
+    color: #155724;
+
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-box{
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-box input,
+.modal-box select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.modal-actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+     width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.card {
+
+    /* width: calc(33.33% - 20px); */
+
+    padding: 20px;
+
+    background: rgba(230, 228, 228, 0.2);
+    backdrop-filter: blur(5px);
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    color: black;
+    height: auto;
+    font-weight: 700;
+    font-size: 24px;
+    gap: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.card:hover {
+    background: rgba(230, 228, 228, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.delete-link {
+    text-decoration: none;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    color: grey;
+}
+
+
+
+.checkbox {
+    transform: scale(1.5);
+    cursor: pointer;
+    margin-right: 25px; 
+}
+
+.status-pending{
+    background:#ffe5e5;
+    color:#d32f2f;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.status-progress{
+    background:#fff7cc;
+    color:#d48806;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.status-done{
+    background:#d9f7d9;
+    color:#2e7d32;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.task-add {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-add {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.btn-add:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
+}
